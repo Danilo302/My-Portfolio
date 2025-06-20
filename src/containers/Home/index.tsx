@@ -1,3 +1,4 @@
+import 'bootstrap-icons/font/bootstrap-icons.css'
 import * as S from './styles'
 
 const Home = () => {
@@ -19,6 +20,17 @@ const Home = () => {
             APIs.
           </p>
         </S.Text>
+        <S.BtnContainer>
+          <S.BtnProjetos href="#">Projetos</S.BtnProjetos>
+          <S.BtnLinks>
+            <a href="https://github.com/Danilo302">
+              <i className="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/danilo-felix-75639524b/">
+              <i className="bi bi-linkedin"></i>
+            </a>
+          </S.BtnLinks>
+        </S.BtnContainer>
       </S.HomePresentation>
       <S.HomePerfil>
         <img src="./images/perfil.png" />

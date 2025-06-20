@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const HomeContainer = styled.main`
-  width: 100%;
   display: flex;
   color: #f8f9fa;
   margin-top: 32px;
@@ -34,9 +33,43 @@ export const NameTitle = styled(Title)`
 `
 export const Text = styled.div`
   margin-top: 56px;
+  margin-bottom: 56px;
   color: #e0e0e0;
 
   p {
     font-size: 20px;
+  }
+`
+export const BtnContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+export const BtnProjetos = styled.a`
+  padding: 12px 32px;
+  color: #f8f9fa;
+  background-color: #007bff;
+  width: 172px;
+  height: 44px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 12px;
+
+  &:hover {
+    background-color: #007bcf;
+  }
+`
+export const BtnLinks = styled.div`
+  display: flex;
+
+  a {
+    margin: 24px;
+    font-size: 32px;
+    color: #e0e0e0;
+
+    &:hover {
+      color: #f8ffff;
+    }
   }
 `
