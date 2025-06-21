@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const HomeContainer = styled.main`
   display: flex;
   color: #f8f9fa;
-  margin-top: 32px;
+  margin-top: 180px;
+  margin-bottom: 160px;
   height: 600px;
 `
 export const HomePerfil = styled.div`

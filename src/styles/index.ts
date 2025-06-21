@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components'
+import variables from './variables'
 
 const EstiloGlobal = createGlobalStyle`
   * {
@@ -8,11 +9,10 @@ const EstiloGlobal = createGlobalStyle`
     font-family: sans-serif;
     list-style: none;
     text-decoration: none;
-    color: #f8f9fa;
   }
 
   body {
-    background-color: #1A1A1F;
+    background-color: ${variables.fundo};
   }
 `
 export const Container = styled.div`
