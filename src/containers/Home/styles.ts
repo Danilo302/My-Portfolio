@@ -56,9 +56,11 @@ export const BtnProjetos = styled.a`
   text-align: center;
   font-size: 18px;
   border-radius: 12px;
+  transition: all ease 0.3s;
 
   &:hover {
     background-color: #007bcf;
+    transform: scale(1.1);
   }
 `
 export const BtnLinks = styled.div`
@@ -68,9 +70,11 @@ export const BtnLinks = styled.div`
     margin: 24px;
     font-size: 32px;
     color: #e0e0e0;
+    transition: all ease 0.3s;
 
     &:hover {
       color: #f8ffff;
+      transform: scale(1.3);
     }
   }
 `

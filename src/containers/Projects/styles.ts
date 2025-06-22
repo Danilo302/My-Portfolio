@@ -1,7 +1,22 @@
 import styled from 'styled-components'
 
-export const ContainerProjects = styled.section``
-export const MyProjects = styled.div`
+export const ContainerProjects = styled.section`
+  padding-top: 36px;
+`
+
+export const Title = styled.h1`
+  font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  font-weight: bold;
+  color: #f4c57e;
+  text-align: center;
+  margin-bottom: 36px;
+`
+
+export const MyProjects = styled.ul`
   display: grid;
-  grid-template: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 0;
+  margin: 0;
 `

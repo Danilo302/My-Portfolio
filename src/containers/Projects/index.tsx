@@ -1,17 +1,26 @@
+import Project from '../../components/Project'
 import { projects } from '../../data/projects'
+import { ContainerProjects, MyProjects, Title } from './styles'
 
 const Projects = () => {
   return (
-    <section>
-      <h1>Meus Projetos</h1>
-      <ul>
+    <ContainerProjects>
+      <Title>Meus Projetos</Title>
+      <MyProjects>
         {projects.map((p) => (
           <li key={p.titulo}>
-            <h2>{p.titulo}</h2>
+            <Project
+              titulo={p.titulo}
+              urlimage={p.urlimage}
+              descricao={p.descricao}
+              tags={p.tags}
+              git="#"
+              link="#"
+            />
           </li>
         ))}
-      </ul>
-    </section>
+      </MyProjects>
+    </ContainerProjects>
   )
 }
 
