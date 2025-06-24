@@ -1,7 +1,7 @@
 import * as S from './styles'
 
 const Objectives = () => (
-  <S.ObjectivesContainer>
+  <S.ObjectivesContainer data-aos="fade-up" data-aos-duration="3000">
     <S.Objective>
       <S.IconsObj className="bi bi-robot"></S.IconsObj>
       <S.TitleSpan>Inteligência Artificial & Machine Learning</S.TitleSpan>

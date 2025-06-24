@@ -52,14 +52,19 @@ export const Tags = styled.ul`
     color: #f8f9fa;
   }
 `
+export const BtnLinksContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+`
 
 export const BtnLinks = styled.a`
   background-color: #007bff;
+  width: 100%;
   color: white;
   text-align: center;
   padding: 8px 16px;
+  margin: 8px;
   border-radius: 8px;
-  text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s;
 

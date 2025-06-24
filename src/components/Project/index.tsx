@@ -20,8 +20,14 @@ const Project = ({ titulo, urlimage, descricao, tags, link, git }: Props) => {
           <li key={t}>{t}</li>
         ))}
       </S.Tags>
-      <S.BtnLinks>Link</S.BtnLinks>
-      <S.BtnLinks>GitHub</S.BtnLinks>
+      <S.BtnLinksContainer>
+        <S.BtnLinks href={git}>
+          <i className="bi bi-github"></i> GitHub
+        </S.BtnLinks>
+        <S.BtnLinks href={link}>
+          <i className="bi bi-globe"></i> Link
+        </S.BtnLinks>
+      </S.BtnLinksContainer>
     </S.CardProject>
   )
 }

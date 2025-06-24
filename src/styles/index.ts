@@ -1,3 +1,5 @@
+import 'aos/dist/aos.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 import styled, { createGlobalStyle } from 'styled-components'
 import variables from './variables'
 
@@ -13,6 +15,7 @@ const EstiloGlobal = createGlobalStyle`
 
   body {
     background-color: ${variables.fundo};
+    color: #FFF;
   }
 `
 export const Container = styled.div`

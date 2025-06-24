@@ -10,7 +10,11 @@ export const Title = styled.h1`
   font-weight: bold;
   color: #f4c57e;
   text-align: center;
-  margin-bottom: 36px;
+`
+export const SubTitle = styled.p`
+  font-size: 18px;
+  margin-bottom: 40px;
+  text-align: center;
 `
 
 export const MyProjects = styled.ul`
