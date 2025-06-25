@@ -23,15 +23,6 @@ export const Subtitle = styled.h3`
   margin-top: 8px;
   font-size: 32px;
 `
-
-export const Title = styled.h1`
-  font-family: 'Playfair Display', serif;
-  font-size: 64px;
-  font-weight: bold;
-`
-export const NameTitle = styled(Title)`
-  color: #007bff;
-`
 export const Text = styled.div`
   margin-top: 56px;
   margin-bottom: 56px;

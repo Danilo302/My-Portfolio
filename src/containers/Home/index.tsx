@@ -1,3 +1,4 @@
+import { Title } from '../../styles'
 import * as S from './styles'
 
 const Home = () => {
@@ -5,8 +6,10 @@ const Home = () => {
     <S.HomeContainer>
       <S.HomePresentation>
         <div>
-          <S.Title>Olá, eu sou</S.Title>
-          <S.NameTitle>Danilo Felix</S.NameTitle>
+          <Title>Olá, eu sou</Title>
+          <Title>
+            <span>Danilo Felix</span>
+          </Title>
           <S.Subtitle>Desenvolvedor Full Stack</S.Subtitle>
         </div>
         <S.Text>

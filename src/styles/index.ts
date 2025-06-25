@@ -24,5 +24,16 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 0 20px;
 `
+export const Title = styled.h1`
+  font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  font-weight: bold;
+
+  span {
+    font-family: 'Playfair Display', serif;
+    color: #007bff;
+  }
+`
+export const SubTitle = styled.h3``
 
 export default EstiloGlobal

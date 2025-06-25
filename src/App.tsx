@@ -5,6 +5,7 @@ import Home from './containers/Home'
 import About from './containers/About'
 import Projects from './containers/Projects'
 import Skills from './containers/Skills'
+import Contact from './containers/Contact'
 
 function App() {
   useEffect(() => {
@@ -29,6 +30,7 @@ function App() {
         <About />
         <Projects />
         <Skills />
+        <Contact />
       </Container>
     </>
   )
