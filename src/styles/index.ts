@@ -34,6 +34,18 @@ export const Title = styled.h1`
     color: #007bff;
   }
 `
-export const SubTitle = styled.h3``
+export const TitleGold = styled(Title)`
+  color: #f4c57e;
+  text-align: center;
+`
+
+export const Subtitle = styled.h3`
+  font-size: 24px;
+  padding-top: 24px;
+`
+export const Text = styled.p`
+  font-size: 20px;
+  color: #e0e0e0;
+`
 
 export default EstiloGlobal

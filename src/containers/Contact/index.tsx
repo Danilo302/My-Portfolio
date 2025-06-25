@@ -1,4 +1,14 @@
 import { useState } from 'react'
+import { Title, Text, Subtitle } from '../../styles'
+import {
+  ContactConatiner,
+  Content,
+  IconContact,
+  InfoName,
+  ItensContact,
+  LinksContact,
+  ListContact
+} from './styles'
 
 const Contact = () => {
   const email = 'danilofelix827@gmail.com'
@@ -12,54 +22,63 @@ const Contact = () => {
   }
 
   return (
-    <section>
-      <h1>
+    <ContactConatiner>
+      <Title>
         Entre em <span>Contato</span>
-      </h1>
-      <p>
+      </Title>
+      <Text>
         Você tem um projeto em mente ou gostaria de bater um papo sobre alguma
         oportunidade? Adoraria saber mais!
-      </p>
-      <div>
-        <h3>Vamos conversar!</h3>
-        <p>
+      </Text>
+      <Content>
+        <Subtitle>Vamos conversar!</Subtitle>
+        <Text>
           Tem alguma ideia ou projeto para discutir? Estou aqui para conversar e
           explorar oportunidades juntos!
-        </p>
-        <ul>
-          <li>
-            <div>
+        </Text>
+        <ListContact>
+          <ItensContact>
+            <IconContact>
               <i className="bi bi-envelope" />{' '}
-            </div>
+            </IconContact>
             <div>
-              <span>Email:</span>
+              <InfoName>Email:</InfoName>
               <div>
-                <a onClick={copiarEmail}>danilofelix827@gmail.com</a>
-                <p>{message ? '• copiado!' : ''}</p>
+                <LinksContact onClick={copiarEmail}>
+                  danilofelix827@gmail.com <i className="bi bi-copy"></i>
+                </LinksContact>
               </div>
             </div>
-          </li>
-          <li>
-            <div>
+          </ItensContact>
+          <ItensContact>
+            <IconContact>
               <i className="bi bi-whatsapp" />
-            </div>
+            </IconContact>
             <div>
-              <span>Telefone:</span>
-              <a href="">(21) 97203-8425</a>
+              <div>
+                <InfoName>Telefone:</InfoName>
+              </div>
+              <LinksContact
+                href="https://wa.me/5521972038425"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                (21) 97203-8425
+              </LinksContact>
             </div>
-          </li>
-          <li>
-            <div>
+          </ItensContact>
+          <ItensContact>
+            <IconContact>
               <i className="bi bi-geo-alt-fill" />
-            </div>
+            </IconContact>
             <div>
-              <span>Localização:</span>
-              <span>RJ, Brasil</span>
+              <InfoName>Localização:</InfoName>
+              <Text>RJ, Brasil</Text>
             </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+          </ItensContact>
+        </ListContact>
+      </Content>
+    </ContactConatiner>
   )
 }
 

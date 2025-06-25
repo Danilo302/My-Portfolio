@@ -8,7 +8,8 @@ export const skillsData = {
     { name: 'React', icon: 'bi bi-filetype-jsx' },
     { name: 'JavaScript', icon: 'bi bi-filetype-js' },
     { name: 'Tailwind CSS', icon: 'bi bi-wind' },
-    { name: 'TypeScript', icon: 'bi bi-filetype-tsx' }
+    { name: 'TypeScript', icon: 'bi bi-filetype-tsx' },
+    { name: 'Sass', icon: 'bi bi-filetype-sass' }
   ],
   'back-end': [
     { name: 'Node.js', icon: 'bi bi-cpu' },

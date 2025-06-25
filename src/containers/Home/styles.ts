@@ -23,14 +23,9 @@ export const Subtitle = styled.h3`
   margin-top: 8px;
   font-size: 32px;
 `
-export const Text = styled.div`
+export const TextContainer = styled.div`
   margin-top: 56px;
   margin-bottom: 56px;
-  color: #e0e0e0;
-
-  p {
-    font-size: 20px;
-  }
 `
 export const BtnContainer = styled.div`
   display: flex;

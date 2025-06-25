@@ -1,4 +1,4 @@
-import { Title } from '../../styles'
+import { Title, Text, Subtitle } from '../../styles'
 import * as S from './styles'
 
 const Home = () => {
@@ -10,18 +10,18 @@ const Home = () => {
           <Title>
             <span>Danilo Felix</span>
           </Title>
-          <S.Subtitle>Desenvolvedor Full Stack</S.Subtitle>
+          <Subtitle>Desenvolvedor Full Stack</Subtitle>
         </div>
-        <S.Text>
-          <p>
+        <S.TextContainer>
+          <Text>
             Desenvolvedor Full Stack Python em formação pela EBAC – Escola
             Britânica de Artes Criativas e Tecnologia, graduado em Sistemas de
             informação pela FAETERJ - Faculdade de Educação Tecnológica do
             Estado do Rio de Janeiro. Profissional com perfil autodidatismo e
             proativo. Possuo experiência em programação, desenvolvimento web e
             APIs.
-          </p>
-        </S.Text>
+          </Text>
+        </S.TextContainer>
         <S.BtnContainer>
           <S.BtnProjetos href="#">Projetos</S.BtnProjetos>
           <S.BtnLinks>

@@ -7,6 +7,7 @@ const scroll = keyframes`
 
 export const Wrapper = styled.div`
   margin-bottom: 32px;
+  margin-top: 32px;
   padding-left: 16px;
   padding-right: 16px;
 `

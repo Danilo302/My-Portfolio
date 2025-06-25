@@ -1,17 +1,10 @@
 import styled from 'styled-components'
+import { Subtitle } from '../../styles'
 
 export const ContainerProjects = styled.section`
   padding-top: 36px;
 `
-
-export const Title = styled.h1`
-  font-family: 'Playfair Display', serif;
-  font-size: 64px;
-  font-weight: bold;
-  color: #f4c57e;
-  text-align: center;
-`
-export const SubTitle = styled.p`
+export const SubTitleProjects = styled(Subtitle)`
   font-size: 18px;
   margin-bottom: 40px;
   text-align: center;

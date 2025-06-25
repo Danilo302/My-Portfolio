@@ -7,24 +7,14 @@ export const ContainerAbount = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
-export const Title = styled.h1`
-  font-family: 'Playfair Display', serif;
-  color: ${variables.destaque};
-  font-size: 64px;
-  font-weight: bold;
   text-align: center;
-`
-export const Subtitle = styled.h3`
-  font-size: 24px;
-  color: ${variables.brancoForte};
-  padding-top: 24px;
 `
 
 export const TextContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 64px;
+  text-align: start;
 `
 export const TextAbout = styled.div`
   padding-top: 24px;
