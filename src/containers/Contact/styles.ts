@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const ContactConatiner = styled.section`
   text-align: center;
   padding: 36px;
+  margin-bottom: 36px;
 `
 export const Content = styled.div`
   text-align: start;

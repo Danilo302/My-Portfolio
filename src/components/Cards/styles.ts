@@ -13,10 +13,10 @@ export const Card = styled.div`
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
   text-align: center;
 
-  &:hover {
+  &&:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }

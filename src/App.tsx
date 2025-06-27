@@ -6,6 +6,7 @@ import About from './containers/About'
 import Projects from './containers/Projects'
 import Skills from './containers/Skills'
 import Contact from './containers/Contact'
+import Footer from './components/Footer'
 
 function App() {
   useEffect(() => {
@@ -32,6 +33,7 @@ function App() {
         <Skills />
         <Contact />
       </Container>
+      <Footer />
     </>
   )
 }

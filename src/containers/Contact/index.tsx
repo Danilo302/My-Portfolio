@@ -1,28 +1,17 @@
-import { useState } from 'react'
 import { Title, Text, Subtitle } from '../../styles'
-import {
-  ContactConatiner,
-  Content,
-  IconContact,
-  InfoName,
-  ItensContact,
-  LinksContact,
-  ListContact
-} from './styles'
+import * as S from './styles'
 
 const Contact = () => {
   const email = 'danilofelix827@gmail.com'
-  const [message, setMessage] = useState(false)
 
   const copiarEmail = () => {
     navigator.clipboard
       .writeText(email)
-      .then(() => setMessage(true))
       .catch((err) => console.error('Falha ao copiar:', err))
   }
 
   return (
-    <ContactConatiner>
+    <S.ContactConatiner>
       <Title>
         Entre em <span>Contato</span>
       </Title>
@@ -30,55 +19,55 @@ const Contact = () => {
         Você tem um projeto em mente ou gostaria de bater um papo sobre alguma
         oportunidade? Adoraria saber mais!
       </Text>
-      <Content>
+      <S.Content>
         <Subtitle>Vamos conversar!</Subtitle>
         <Text>
           Tem alguma ideia ou projeto para discutir? Estou aqui para conversar e
           explorar oportunidades juntos!
         </Text>
-        <ListContact>
-          <ItensContact>
-            <IconContact>
+        <S.ListContact>
+          <S.ItensContact>
+            <S.IconContact>
               <i className="bi bi-envelope" />{' '}
-            </IconContact>
+            </S.IconContact>
             <div>
-              <InfoName>Email:</InfoName>
+              <S.InfoName>Email:</S.InfoName>
               <div>
-                <LinksContact onClick={copiarEmail}>
+                <S.LinksContact onClick={copiarEmail}>
                   danilofelix827@gmail.com <i className="bi bi-copy"></i>
-                </LinksContact>
+                </S.LinksContact>
               </div>
             </div>
-          </ItensContact>
-          <ItensContact>
-            <IconContact>
+          </S.ItensContact>
+          <S.ItensContact>
+            <S.IconContact>
               <i className="bi bi-whatsapp" />
-            </IconContact>
+            </S.IconContact>
             <div>
               <div>
-                <InfoName>Telefone:</InfoName>
+                <S.InfoName>Telefone:</S.InfoName>
               </div>
-              <LinksContact
+              <S.LinksContact
                 href="https://wa.me/5521972038425"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 (21) 97203-8425
-              </LinksContact>
+              </S.LinksContact>
             </div>
-          </ItensContact>
-          <ItensContact>
-            <IconContact>
+          </S.ItensContact>
+          <S.ItensContact>
+            <S.IconContact>
               <i className="bi bi-geo-alt-fill" />
-            </IconContact>
+            </S.IconContact>
             <div>
-              <InfoName>Localização:</InfoName>
+              <S.InfoName>Localização:</S.InfoName>
               <Text>RJ, Brasil</Text>
             </div>
-          </ItensContact>
-        </ListContact>
-      </Content>
-    </ContactConatiner>
+          </S.ItensContact>
+        </S.ListContact>
+      </S.Content>
+    </S.ContactConatiner>
   )
 }
 
