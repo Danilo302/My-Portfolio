@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.nav`
   width: 100%;
   height: 60px;
-  background-color: #0d0d0d;
+  background-color: rgba(19, 19, 19, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,9 +19,10 @@ export const NavBarContent = styled.div`
 `
 
 export const Logo = styled.h1`
-  color: #fff;
+  color: #f4c57e;
   font-size: 24px;
   font-family: 'Playfair Display', serif;
+  padding-left: 24px;
 `
 
 export const NavLinks = styled.div`
@@ -41,7 +42,7 @@ export const NavLinkItem = styled.a`
   transition: color 0.3s ease;
 
   &:hover {
-    color: #00ffff;
+    color: #007bff;
   }
 
   &::after {
@@ -49,7 +50,7 @@ export const NavLinkItem = styled.a`
     position: absolute;
     width: 0%;
     height: 2px;
-    background: #00ffff;
+    background: #007bff;
     left: 0;
     bottom: -4px;
     transition: width 0.3s ease;

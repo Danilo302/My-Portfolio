@@ -10,6 +10,7 @@ import {
 } from './styles'
 
 const Navbar = () => {
+  const [ligth, setLigth] = useState(false)
   const [open, setOpen] = useState(false)
 
   const toggleMenu = () => setOpen(!open)
@@ -31,6 +32,10 @@ const Navbar = () => {
           <NavLinkItem href="#projetos">Projetos</NavLinkItem>
           <NavLinkItem href="#skills">Skills</NavLinkItem>
           <NavLinkItem href="#contato">Contato</NavLinkItem>
+          <i
+            className={ligth ? 'bi bi-moon-fill' : 'bi bi-brightness-high-fill'}
+            onClick={() => setLigth(ligth ? false : true)}
+          />
         </NavLinks>
 
         <MobileMenu open={open}>
