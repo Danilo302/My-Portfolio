@@ -1,14 +1,15 @@
+import TypingEffect from '../../components/TypingEffect'
 import { Title, Text, Subtitle } from '../../styles'
 import * as S from './styles'
 
 const Home = () => {
   return (
-    <S.HomeContainer>
+    <S.HomeContainer id="home">
       <S.HomePresentation>
         <div>
           <Title>Olá, eu sou</Title>
           <Title>
-            <span>Danilo Felix</span>
+            <TypingEffect text="Danilo Felix" speed={80} loop />
           </Title>
           <Subtitle>Desenvolvedor Full Stack</Subtitle>
         </div>

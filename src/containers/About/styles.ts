@@ -3,6 +3,7 @@ import variables from '../../styles/variables'
 
 export const ContainerAbount = styled.section`
   margin-top: 64px;
+  padding-top: 64px;
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;

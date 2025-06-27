@@ -19,10 +19,7 @@ export const HomePresentation = styled.div`
   justify-content: center;
   padding-left: 24px;
 `
-export const Subtitle = styled.h3`
-  margin-top: 8px;
-  font-size: 32px;
-`
+
 export const TextContainer = styled.div`
   margin-top: 56px;
   margin-bottom: 56px;

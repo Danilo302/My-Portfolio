@@ -5,7 +5,7 @@ import { SkillSection } from './styled'
 
 const Skills = () => {
   return (
-    <SkillSection>
+    <SkillSection id="skills">
       <TitleGold>Habilidades Técnicas</TitleGold>
       <Text>
         Tecnologias e ferramentas que utilizo para criar soluções robustas e

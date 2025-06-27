@@ -5,7 +5,7 @@ import { ContainerProjects, MyProjects, SubTitleProjects } from './styles'
 
 const Projects = () => {
   return (
-    <ContainerProjects>
+    <ContainerProjects id="projetos">
       <TitleGold>Meus Projetos</TitleGold>
       <SubTitleProjects>
         Aqui estão alguns dos projetos que desenvolvi, demonstrando minhas

@@ -15,7 +15,7 @@ const SkillCarousel = ({ category, skills }: SkillCarouselProps) => {
 
   return (
     <S.Wrapper>
-      <S.Title>{category}</S.Title>
+      <S.Title data-aos="zoom-in-up">{category}</S.Title>
       <S.SliderWrapper>
         <S.SliderTrack className="slider-track">
           {loopSkills.map((skill, index) => (

@@ -11,7 +11,7 @@ const Contact = () => {
   }
 
   return (
-    <S.ContactConatiner>
+    <S.ContactConatiner id="contato">
       <Title>
         Entre em <span>Contato</span>
       </Title>
@@ -26,7 +26,7 @@ const Contact = () => {
           explorar oportunidades juntos!
         </Text>
         <S.ListContact>
-          <S.ItensContact>
+          <S.ItensContact data-aos="fade-right">
             <S.IconContact>
               <i className="bi bi-envelope" />{' '}
             </S.IconContact>
@@ -39,7 +39,7 @@ const Contact = () => {
               </div>
             </div>
           </S.ItensContact>
-          <S.ItensContact>
+          <S.ItensContact data-aos="fade-right">
             <S.IconContact>
               <i className="bi bi-whatsapp" />
             </S.IconContact>
@@ -56,7 +56,7 @@ const Contact = () => {
               </S.LinksContact>
             </div>
           </S.ItensContact>
-          <S.ItensContact>
+          <S.ItensContact data-aos="fade-right">
             <S.IconContact>
               <i className="bi bi-geo-alt-fill" />
             </S.IconContact>

@@ -7,6 +7,7 @@ import Projects from './containers/Projects'
 import Skills from './containers/Skills'
 import Contact from './containers/Contact'
 import Footer from './components/Footer'
+import Navbar from './components/NavBar'
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
   return (
     <>
       <EstiloGlobal />
+      <Navbar />
       <Container>
         <Home />
         <About />
