@@ -11,6 +11,7 @@ const EstiloGlobal = createGlobalStyle`
     font-family: sans-serif;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
   }
 
   body {
