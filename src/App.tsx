@@ -8,6 +8,8 @@ import Skills from './containers/Skills'
 import Contact from './containers/Contact'
 import Footer from './components/Footer'
 import Navbar from './components/NavBar'
+import { ThemeProvider } from 'styled-components'
+import themeDark from './themes/dark'
 
 function App() {
   useEffect(() => {
@@ -25,7 +27,7 @@ function App() {
   }, [])
 
   return (
-    <>
+    <ThemeProvider theme={themeDark}>
       <EstiloGlobal />
       <Navbar />
       <Container>
@@ -36,7 +38,7 @@ function App() {
         <Contact />
       </Container>
       <Footer />
-    </>
+    </ThemeProvider>
   )
 }
 

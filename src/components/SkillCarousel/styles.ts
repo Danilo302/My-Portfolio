@@ -16,7 +16,7 @@ export const Title = styled.h2`
   font-size: 24px;
   font-weight: 600;
   text-align: center;
-  color: #fff;
+  color: ${(props) => props.theme.corPrincipal};
   margin-bottom: 16px;
   text-transform: capitalize;
 `
@@ -42,12 +42,20 @@ export const SliderWrapper = styled.div`
 
   &::before {
     left: 0;
-    background: linear-gradient(to right, #1a1a1f 0%, transparent 100%);
+    background: linear-gradient(
+      to right,
+      ${(props) => props.theme.corDeFundo} 0%,
+      transparent 100%
+    );
   }
 
   &::after {
     right: 0;
-    background: linear-gradient(to left, #1a1a1f 0%, transparent 100%);
+    background: linear-gradient(
+      to left,
+      ${(props) => props.theme.corDeFundo} 0%,
+      transparent 100%
+    );
   }
 `
 
@@ -65,9 +73,9 @@ export const Slide = styled.div`
   flex: 0 0 auto;
   min-width: 160px;
   padding: 16px;
-  color: #fff;
+  color: ${(props) => props.theme.corPrincipal};
   background: rgba(0, 123, 207, 0.4);
-  border: solid 2px #007bff;
+  border: solid 2px ${(props) => props.theme.corTerciaria};
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);

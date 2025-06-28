@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const CardProject = styled.div`
-  background-color: #ffffff;
-  color: #1a1a1f;
+  background-color: ${(props) => props.theme.corPrincipal};
+  color: ${(props) => props.theme.corDeFundo};
   padding: 24px;
   margin-bottom: 24px;
   border-radius: 12px;
@@ -28,7 +28,7 @@ export const ImgProject = styled.img`
 
 export const TitleProject = styled.h2`
   font-size: 24px;
-  color: #f4c57e;
+  color: ${(props) => props.theme.corQuartenaria};
   margin: 0;
 `
 
@@ -45,11 +45,11 @@ export const Tags = styled.ul`
   gap: 8px;
 
   li {
-    background-color: #343a40;
+    background-color: ${(props) => props.theme.corDeFundo};
     padding: 8px 14px;
     border-radius: 20px;
     font-size: 14px;
-    color: #f8f9fa;
+    color: ${(props) => props.theme.corSecundaria};
   }
 `
 export const BtnLinksContainer = styled.div`
@@ -58,9 +58,9 @@ export const BtnLinksContainer = styled.div`
 `
 
 export const BtnLinks = styled.a`
-  background-color: #007bff;
+  background-color: ${(props) => props.theme.corTerciaria};
   width: 100%;
-  color: white;
+  color: ${(props) => props.theme.corPrincipal};
   text-align: center;
   padding: 8px 16px;
   margin: 8px;
@@ -69,6 +69,10 @@ export const BtnLinks = styled.a`
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: color-mix(
+      in srgb,
+      ${(props) => props.theme.corTerciaria},
+      black 20%
+    );
   }
 `

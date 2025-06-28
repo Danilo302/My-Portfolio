@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import variables from '../../styles/variables'
 
 export const ObjectivesContainer = styled.ul`
   display: flex;
@@ -11,13 +10,13 @@ export const Objective = styled.li`
 `
 export const IconsObj = styled.i`
   display: block;
-  color: ${variables.brancoForte};
+  color: ${(props) => props.theme.corPrincipal};
   font-size: 2.5rem;
 `
 export const TitleSpan = styled.span`
-  color: ${variables.brancoForte};
+  color: ${(props) => props.theme.corPrincipal};
   font-size: 18px;
 `
 export const Description = styled.p`
-  color: ${variables.brancoFraco};
+  color: ${(props) => props.theme.corSecundaria};
 `

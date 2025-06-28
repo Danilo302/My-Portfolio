@@ -3,19 +3,19 @@ import styled from 'styled-components'
 export const FooterContainer = styled.footer`
   padding: 32px;
   text-align: center;
-  background-color: #fff;
-  color: #000000;
+  background-color: ${(props) => props.theme.corPrincipal};
+  color: ${(props) => props.theme.corDeFundo};
 `
 export const LinksIcon = styled.a`
   margin: 8px;
   font-size: 24px;
-  color: #000000;
+  color: ${(props) => props.theme.corDeFundo};
   display: inline-block;
   transition: all 0.3s ease;
 
   &:hover {
     transform: scale(1.2);
-    color: #007bff;
+    color: ${(props) => props.theme.corTerciaria};
   }
 `
 export const TextFooter = styled.div`
@@ -35,6 +35,6 @@ export const LinkName = styled.a`
   cursor: pointer;
 
   &:hover {
-    border-bottom: solid 2px #007bff;
+    border-bottom: solid 2px ${(props) => props.theme.corTerciaria};
   }
 `

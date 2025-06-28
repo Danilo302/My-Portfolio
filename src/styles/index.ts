@@ -1,7 +1,6 @@
 import 'aos/dist/aos.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import styled, { createGlobalStyle } from 'styled-components'
-import variables from './variables'
 
 const EstiloGlobal = createGlobalStyle`
   * {
@@ -15,7 +14,7 @@ const EstiloGlobal = createGlobalStyle`
   }
 
   body {
-    background-color: ${variables.fundo};
+    background-color: ${(props) => props.theme.corDeFundo};
     color: #FFF;
   }
 `
@@ -32,11 +31,11 @@ export const Title = styled.h1`
 
   span {
     font-family: 'Playfair Display', serif;
-    color: #007bff;
+    color: ${(props) => props.theme.corTerciaria};
   }
 `
 export const TitleGold = styled(Title)`
-  color: #f4c57e;
+  color: ${(props) => props.theme.corQuartenaria};
   text-align: center;
 `
 
@@ -46,7 +45,7 @@ export const Subtitle = styled.h3`
 `
 export const Text = styled.p`
   font-size: 20px;
-  color: #e0e0e0;
+  color: ${(props) => props.theme.corSecundaria};
 `
 
 export default EstiloGlobal

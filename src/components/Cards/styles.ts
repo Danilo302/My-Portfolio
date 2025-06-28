@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import variables from '../../styles/variables'
 
 export const CardContainer = styled.div`
   display: grid;
@@ -9,7 +8,7 @@ export const CardContainer = styled.div`
 `
 
 export const Card = styled.div`
-  background: ${variables.brancoForte};
+  background: ${(props) => props.theme.corPrincipal};
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -24,7 +23,7 @@ export const Card = styled.div`
 
 export const CardIcon = styled.i`
   font-size: 2.5rem;
-  color: ${variables.destaque};
+  color: ${(props) => props.theme.corTerciaria};
   margin-bottom: 1rem;
 `
 
@@ -32,12 +31,12 @@ export const CardTitle = styled.span`
   display: block;
   font-size: 1.25rem;
   font-weight: 600;
-  color: ${variables.fundo};
+  color: ${(props) => props.theme.corDeFundo};
   margin-bottom: 0.5rem;
 `
 
 export const CardDescription = styled.p`
-  color: ${variables.fundo};
+  color: ${(props) => props.theme.corDeFundo};
   font-size: 14px;
   line-height: 1.5;
 `

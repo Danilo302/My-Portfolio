@@ -24,7 +24,7 @@ export const IconContact = styled.div`
   text-align: center;
   padding: 8px;
   margin-right: 8px;
-  background-color: #007bff;
+  background-color: ${(props) => props.theme.corTerciaria};
   border-radius: 50%;
 `
 
@@ -33,10 +33,10 @@ export const InfoName = styled.span`
 `
 export const LinksContact = styled.a`
   font-size: 18px;
-  color: #e0e0e0;
+  color: ${(props) => props.theme.corSecundaria};
   cursor: pointer;
 
   &:hover {
-    color: #f4c57e;
+    color: ${(props) => props.theme.corQuartenaria};
   }
 `

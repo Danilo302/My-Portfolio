@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import variables from '../../styles/variables'
 
 export const ContainerAbount = styled.section`
   margin-top: 64px;
@@ -25,6 +24,6 @@ export const TextAbout = styled.div`
 
 export const Text = styled.p`
   font-size: 18px;
-  color: ${variables.brancoFraco};
+  color: ${(props) => props.theme.corSecundaria};
   padding-top: 18px;
 `

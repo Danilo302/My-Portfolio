@@ -3,7 +3,11 @@ import styled from 'styled-components'
 export const Container = styled.nav`
   width: 100%;
   height: 60px;
-  background-color: rgba(19, 19, 19, 0.4);
+  background-color: color-mix(
+    in srgb,
+    ${(props) => props.theme.corDeFundo},
+    transparent 20%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +23,7 @@ export const NavBarContent = styled.div`
 `
 
 export const Logo = styled.h1`
-  color: #f4c57e;
+  color: ${(props) => props.theme.corQuartenaria};
   font-size: 24px;
   font-family: 'Playfair Display', serif;
   padding-left: 24px;
@@ -35,14 +39,14 @@ export const NavLinks = styled.div`
 `
 
 export const NavLinkItem = styled.a`
-  color: #fff;
+  color: ${(props) => props.theme.corSecundaria};
   text-decoration: none;
   font-size: 16px;
   position: relative;
   transition: color 0.3s ease;
 
   &:hover {
-    color: #007bff;
+    color: ${(props) => props.theme.corTerciaria};
   }
 
   &::after {
@@ -50,7 +54,7 @@ export const NavLinkItem = styled.a`
     position: absolute;
     width: 0%;
     height: 2px;
-    background: #007bff;
+    background: ${(props) => props.theme.corTerciaria};
     left: 0;
     bottom: -4px;
     transition: width 0.3s ease;
@@ -77,7 +81,7 @@ export const MobileMenu = styled.div<{ open: boolean }>`
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    background-color: #0d0d0d;
+    background-color: ${(props) => props.theme.corDeFundo};
     position: absolute;
     top: 60px;
     left: 0;

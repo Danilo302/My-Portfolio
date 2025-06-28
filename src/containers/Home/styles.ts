@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HomeContainer = styled.main`
   display: flex;
-  color: #f8f9fa;
+  color: ${(props) => props.theme.corPrincipal};
   margin-top: 180px;
   margin-bottom: 160px;
   height: 600px;
@@ -32,8 +32,8 @@ export const BtnContainer = styled.div`
 
 export const BtnProjetos = styled.a`
   padding: 12px 32px;
-  color: #f8f9fa;
-  background-color: #007bff;
+  color: ${(props) => props.theme.corPrincipal};
+  background-color: ${(props) => props.theme.corTerciaria};
   width: 172px;
   height: 44px;
   text-align: center;
@@ -42,7 +42,7 @@ export const BtnProjetos = styled.a`
   transition: all ease 0.3s;
 
   &:hover {
-    background-color: #007bcf;
+    filter: brightness(1.1);
     transform: scale(1.1);
   }
 `
@@ -52,11 +52,11 @@ export const BtnLinks = styled.div`
   a {
     margin: 24px;
     font-size: 32px;
-    color: #e0e0e0;
+    color: ${(props) => props.theme.corSecundaria};
     transition: all ease 0.3s;
 
     &:hover {
-      color: #f8ffff;
+      color: ${(props) => props.theme.corPrincipal};
       transform: scale(1.3);
     }
   }
