@@ -25,6 +25,7 @@ export const IconContact = styled.div`
   padding: 8px;
   margin-right: 8px;
   background-color: ${(props) => props.theme.corTerciaria};
+  color: #fff;
   border-radius: 50%;
 `
 

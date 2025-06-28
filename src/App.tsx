@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import AOS from 'aos'
 import EstiloGlobal, { Container } from './styles'
 import Home from './containers/Home'
@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 import Navbar from './components/NavBar'
 import { ThemeProvider } from 'styled-components'
 import themeDark from './themes/dark'
+import themeLight from './themes/light'
 
 function App() {
   useEffect(() => {
@@ -26,10 +27,16 @@ function App() {
     AOS.refresh()
   }, [])
 
+  const [isThemeDark, setIsThemeDark] = useState(true)
+
+  function themeMode() {
+    setIsThemeDark(!isThemeDark)
+  }
+
   return (
-    <ThemeProvider theme={themeDark}>
+    <ThemeProvider theme={isThemeDark ? themeDark : themeLight}>
       <EstiloGlobal />
-      <Navbar />
+      <Navbar changeTheme={themeMode} />
       <Container>
         <Home />
         <About />

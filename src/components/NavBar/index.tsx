@@ -6,12 +6,22 @@ import {
   NavLinkItem,
   Hamburger,
   MobileMenu,
-  NavBarContent
+  NavBarContent,
+  IconTheme
 } from './styles'
 
-const Navbar = () => {
+type Props = {
+  changeTheme: () => void
+}
+
+const Navbar = (props: Props) => {
   const [ligth, setLigth] = useState(false)
   const [open, setOpen] = useState(false)
+
+  function theme() {
+    props.changeTheme()
+    setLigth(ligth ? false : true)
+  }
 
   const toggleMenu = () => setOpen(!open)
   return (
@@ -32,9 +42,9 @@ const Navbar = () => {
           <NavLinkItem href="#projetos">Projetos</NavLinkItem>
           <NavLinkItem href="#skills">Skills</NavLinkItem>
           <NavLinkItem href="#contato">Contato</NavLinkItem>
-          <i
+          <IconTheme
             className={ligth ? 'bi bi-moon-fill' : 'bi bi-brightness-high-fill'}
-            onClick={() => setLigth(ligth ? false : true)}
+            onClick={theme}
           />
         </NavLinks>
 

@@ -32,7 +32,7 @@ export const BtnContainer = styled.div`
 
 export const BtnProjetos = styled.a`
   padding: 12px 32px;
-  color: ${(props) => props.theme.corPrincipal};
+  color: #fff;
   background-color: ${(props) => props.theme.corTerciaria};
   width: 172px;
   height: 44px;

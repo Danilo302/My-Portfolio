@@ -40,6 +40,7 @@ export const NavLinks = styled.div`
 
 export const NavLinkItem = styled.a`
   color: ${(props) => props.theme.corSecundaria};
+  font-weight: bold;
   text-decoration: none;
   font-size: 16px;
   position: relative;
@@ -62,6 +63,13 @@ export const NavLinkItem = styled.a`
 
   &:hover::after {
     width: 100%;
+  }
+`
+export const IconTheme = styled.i`
+  cursor: pointer;
+
+  &:hover {
+    color: ${(props) => props.theme.corTerciaria};
   }
 `
 

@@ -15,7 +15,7 @@ const EstiloGlobal = createGlobalStyle`
 
   body {
     background-color: ${(props) => props.theme.corDeFundo};
-    color: #FFF;
+    color: ${(props) => props.theme.corPrincipal};
   }
 `
 export const Container = styled.div`

@@ -60,7 +60,7 @@ export const BtnLinksContainer = styled.div`
 export const BtnLinks = styled.a`
   background-color: ${(props) => props.theme.corTerciaria};
   width: 100%;
-  color: ${(props) => props.theme.corPrincipal};
+  color: #fff;
   text-align: center;
   padding: 8px 16px;
   margin: 8px;
