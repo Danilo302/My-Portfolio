@@ -21,9 +21,3 @@ export const TextAbout = styled.div`
   display: flex;
   flex-direction: column;
 `
-
-export const Text = styled.p`
-  font-size: 18px;
-  color: ${(props) => props.theme.corSecundaria};
-  padding-top: 18px;
-`

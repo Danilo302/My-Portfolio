@@ -7,3 +7,11 @@ const themeLight = {
 }
 
 export default themeLight
+
+// const themeLight = {
+//   corPrincipal: '#0F172A',
+//   corSecundaria: '#334155',
+//   corTerciaria: '#008080',
+//   corQuartenaria: '#D97706',
+//   corDeFundo: '#F8FAFC'
+// }

@@ -11,6 +11,10 @@ const EstiloGlobal = createGlobalStyle`
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
+
+    scrollbar-width: thin;
+    scrollbar-color: ${(props) => props.theme.corTerciaria} ${(props) =>
+  props.theme.corDeFundo};
   }
 
   body {

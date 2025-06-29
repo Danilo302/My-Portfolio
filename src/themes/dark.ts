@@ -6,4 +6,12 @@ const themeDark = {
   corDeFundo: '#1A1A1F'
 }
 
+// const themeDark = {
+//   corPrincipal: '#E1E8EB',
+//   corSecundaria: '#AABBC4',
+//   corTerciaria: '#00B4D8',
+//   corQuartenaria: '#9D4EDD',
+//   corDeFundo: '#0F172A'
+// }
+
 export default themeDark

@@ -16,10 +16,22 @@ const About = () => {
         <S.TextAbout>
           <Subtitle>Minha Trajetória</Subtitle>
           <Text>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
-            sapiente delectus voluptatem error blanditiis id ab laboriosam quia
-            sit architecto quisquam nemo accusamus qui corrupti adipisci, enim
-            alias doloribus suscipit.
+            Desde cedo, sempre fui movido pela curiosidade e pelo desejo de
+            entender como as coisas funcionam. Minha paixão por tecnologia
+            floresceu naturalmente, impulsionando minha decisão de cursar
+            Sistemas de Informação na FAETERJ 🎓 e me especializar como
+            Desenvolvedor Full Stack Python pela EBAC 🚀. <br />
+            <br />
+            Ao longo da minha jornada, desenvolvi projetos que uniram
+            criatividade ✨ e eficiência 📈, como o sistema automatizado de
+            pedidos de TCC, além de diversas aplicações web com foco em
+            usabilidade e automação 🧠. <br />
+            <br />
+            Gosto de aprender de forma autodidata 📚, sou proativo 💪 e acredito
+            que a tecnologia é uma poderosa ferramenta de transformação 🌍. Meu
+            objetivo é continuar evoluindo, sempre buscando soluções inovadoras
+            que simplifiquem processos e impactem positivamente a vida das
+            pessoas 💡❤️.
           </Text>
         </S.TextAbout>
         <Cards />
