@@ -24,7 +24,7 @@ const Home = () => {
           </Text>
         </S.TextContainer>
         <S.BtnContainer>
-          <S.BtnProjetos href="#">Projetos</S.BtnProjetos>
+          <S.BtnProjetos href="#projetos">Projetos</S.BtnProjetos>
           <S.BtnLinks>
             <a href="https://github.com/Danilo302">
               <i className="bi bi-github"></i>

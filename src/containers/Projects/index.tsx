@@ -19,8 +19,8 @@ const Projects = () => {
               urlimage={p.urlimage}
               descricao={p.descricao}
               tags={p.tags}
-              git="#"
-              link="#"
+              git={p.git}
+              link={p.link}
             />
           </li>
         ))}

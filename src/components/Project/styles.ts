@@ -8,9 +8,11 @@ export const CardProject = styled.div`
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   width: 100%;
+  height: 100%;
   max-width: 560px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 1rem;
   transition: transform 0.3s;
 
@@ -38,11 +40,11 @@ export const DescriptionProject = styled.p`
 `
 
 export const Tags = styled.ul`
-  list-style: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin-left: 8px;
 
   li {
     background-color: ${(props) => props.theme.corDeFundo};
