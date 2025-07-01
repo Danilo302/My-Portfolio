@@ -29,14 +29,17 @@ const Navbar = (props: Props) => {
       <NavBarContent>
         <Logo>Danilo Felix</Logo>
 
-        <IconTheme
-          className={ligth ? 'bi bi-moon-fill' : 'bi bi-brightness-high-fill'}
-          onClick={theme}
-        />
         <Hamburger>
+          <div>
+            <IconTheme
+              className={
+                ligth ? 'bi bi-moon-fill' : 'bi bi-brightness-high-fill'
+              }
+              onClick={theme}
+            />
+          </div>
           <i
             className={`bi ${open ? 'bi-x-lg' : 'bi-list'}`}
-            style={{ fontSize: '28px', color: 'white' }}
             onClick={toggleMenu}
           ></i>
         </Hamburger>

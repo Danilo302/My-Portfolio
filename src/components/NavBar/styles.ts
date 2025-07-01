@@ -78,8 +78,17 @@ export const Hamburger = styled.div`
   cursor: pointer;
   width: 32px;
 
+  i {
+    color: ${(props) => props.theme.corSecundaria};
+    font-size: 24px;
+  }
+
+  div {
+    padding-right: 8px;
+  }
+
   @media (max-width: 768px) {
-    display: block;
+    display: flex;
   }
 `
 
