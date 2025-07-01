@@ -28,6 +28,10 @@ export const TextFooter = styled.div`
     color: rgb(140, 140, 139);
     margin: 4px;
   }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `
 export const LinkName = styled.a`
   font-weight: bold

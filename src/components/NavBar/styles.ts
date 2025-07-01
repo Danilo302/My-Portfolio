@@ -76,6 +76,7 @@ export const IconTheme = styled.i`
 export const Hamburger = styled.div`
   display: none;
   cursor: pointer;
+  width: 32px;
 
   @media (max-width: 768px) {
     display: block;

@@ -16,4 +16,8 @@ export const MyProjects = styled.ul`
   gap: 24px;
   padding: 0;
   margin: 0;
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 `

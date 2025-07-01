@@ -29,10 +29,15 @@ const Navbar = (props: Props) => {
       <NavBarContent>
         <Logo>Danilo Felix</Logo>
 
-        <Hamburger onClick={toggleMenu}>
+        <IconTheme
+          className={ligth ? 'bi bi-moon-fill' : 'bi bi-brightness-high-fill'}
+          onClick={theme}
+        />
+        <Hamburger>
           <i
             className={`bi ${open ? 'bi-x-lg' : 'bi-list'}`}
             style={{ fontSize: '28px', color: 'white' }}
+            onClick={toggleMenu}
           ></i>
         </Hamburger>
 
@@ -48,23 +53,25 @@ const Navbar = (props: Props) => {
           />
         </NavLinks>
 
-        <MobileMenu open={open}>
-          <NavLinkItem href="#home" onClick={toggleMenu}>
-            Home
-          </NavLinkItem>
-          <NavLinkItem href="#sobre" onClick={toggleMenu}>
-            Sobre mim
-          </NavLinkItem>
-          <NavLinkItem href="#projetos" onClick={toggleMenu}>
-            Projetos
-          </NavLinkItem>
-          <NavLinkItem href="#skills" onClick={toggleMenu}>
-            Skills
-          </NavLinkItem>
-          <NavLinkItem href="#contato" onClick={toggleMenu}>
-            Contato
-          </NavLinkItem>
-        </MobileMenu>
+        {open && (
+          <MobileMenu open={open}>
+            <NavLinkItem href="#home" onClick={toggleMenu}>
+              Home
+            </NavLinkItem>
+            <NavLinkItem href="#sobre" onClick={toggleMenu}>
+              Sobre mim
+            </NavLinkItem>
+            <NavLinkItem href="#projetos" onClick={toggleMenu}>
+              Projetos
+            </NavLinkItem>
+            <NavLinkItem href="#skills" onClick={toggleMenu}>
+              Skills
+            </NavLinkItem>
+            <NavLinkItem href="#contato" onClick={toggleMenu}>
+              Contato
+            </NavLinkItem>
+          </MobileMenu>
+        )}
       </NavBarContent>
     </Container>
   )

@@ -27,10 +27,19 @@ export const IconContact = styled.div`
   background-color: ${(props) => props.theme.corTerciaria};
   color: #fff;
   border-radius: 50%;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+    width: 56px;
+  }
 `
 
 export const InfoName = styled.span`
   font-size: 18px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `
 export const LinksContact = styled.a`
   font-size: 18px;
@@ -39,5 +48,9 @@ export const LinksContact = styled.a`
 
   &:hover {
     color: ${(props) => props.theme.corQuartenaria};
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
   }
 `

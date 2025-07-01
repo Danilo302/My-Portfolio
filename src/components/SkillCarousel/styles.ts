@@ -19,6 +19,10 @@ export const Title = styled.h2`
   color: ${(props) => props.theme.corPrincipal};
   margin-bottom: 16px;
   text-transform: capitalize;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `
 
 export const SliderWrapper = styled.div`
@@ -65,6 +69,12 @@ export const SliderTrack = styled.div`
   width: max-content;
   animation: ${scroll} 20s linear infinite;
   animation-play-state: running;
+
+  @media (max-width: 768px) {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
 `
 
 export const Slide = styled.div`
@@ -84,5 +94,11 @@ export const Slide = styled.div`
 
   p {
     margin-left: 4px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    padding: 8px;
+    min-width: 80px;
   }
 `

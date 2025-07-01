@@ -37,6 +37,15 @@ export const Title = styled.h1`
     font-family: 'Playfair Display', serif;
     color: ${(props) => props.theme.corTerciaria};
   }
+
+  @media (max-width: 768px) {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 36px;
+  }
 `
 export const TitleGold = styled(Title)`
   color: ${(props) => props.theme.corQuartenaria};
@@ -46,10 +55,28 @@ export const TitleGold = styled(Title)`
 export const Subtitle = styled.h3`
   font-size: 24px;
   padding-top: 24px;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
 `
 export const Text = styled.p`
   font-size: 20px;
   color: ${(props) => props.theme.corSecundaria};
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `
 
 export default EstiloGlobal

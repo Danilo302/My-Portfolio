@@ -26,17 +26,25 @@ const Home = () => {
         <S.BtnContainer>
           <S.BtnProjetos href="#projetos">Projetos</S.BtnProjetos>
           <S.BtnLinks>
-            <a href="https://github.com/Danilo302">
+            <a
+              href="https://github.com/Danilo302"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="bi bi-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/danilo-felix-75639524b/">
+            <a
+              href="https://www.linkedin.com/in/danilo-felix-75639524b/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="bi bi-linkedin"></i>
             </a>
           </S.BtnLinks>
         </S.BtnContainer>
       </S.HomePresentation>
       <S.HomePerfil>
-        <img src="./images/perfil.png" />
+        <img src="./images/perfil.png" alt="Foto de Danilo Felix" />
       </S.HomePerfil>
     </S.HomeContainer>
   )

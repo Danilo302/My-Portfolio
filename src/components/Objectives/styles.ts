@@ -3,6 +3,12 @@ import styled from 'styled-components'
 export const ObjectivesContainer = styled.ul`
   display: flex;
   padding-top: 24px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
 `
 export const Objective = styled.li`
   padding: 24px;

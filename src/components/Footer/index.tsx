@@ -6,13 +6,17 @@ const Footer = () => {
     <FooterContainer>
       <Subtitle>Danilo Felix</Subtitle>
       <div>
-        <LinksIcon href="#">
+        <LinksIcon
+          href="https://www.instagram.com/danilofx_m/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="bi bi-instagram" />
         </LinksIcon>
-        <LinksIcon href="#">
+        <LinksIcon href="https://www.linkedin.com/in/danilo-felix-75639524b/">
           <i className="bi bi-linkedin" />
         </LinksIcon>
-        <LinksIcon href="#">
+        <LinksIcon href="https://github.com/Danilo302">
           <i className="bi bi-github" />
         </LinksIcon>
       </div>

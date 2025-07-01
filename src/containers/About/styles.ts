@@ -15,9 +15,20 @@ export const TextContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   margin-top: 64px;
   text-align: start;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 16px;
+  }
 `
 export const TextAbout = styled.div`
   padding-top: 24px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    align-items: center;
+    padding-top: 16px;
+  }
 `

@@ -24,10 +24,10 @@ const Project = ({ titulo, urlimage, descricao, tags, link, git }: Props) => {
           ))}
         </S.Tags>
         <S.BtnLinksContainer>
-          <S.BtnLinks href={git}>
+          <S.BtnLinks href={git} target="_blank" rel="noopener noreferrer">
             <i className="bi bi-github"></i> GitHub
           </S.BtnLinks>
-          <S.BtnLinks href={link}>
+          <S.BtnLinks href={link} target="_blank" rel="noopener noreferrer">
             <i className="bi bi-globe"></i> Link
           </S.BtnLinks>
         </S.BtnLinksContainer>
