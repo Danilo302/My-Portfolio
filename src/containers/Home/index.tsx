@@ -1,6 +1,7 @@
 import TypingEffect from '../../components/TypingEffect'
 import { Title, Text, Subtitle } from '../../styles'
 import * as S from './styles'
+import Perfil from '../../assets/images/perfil.png'
 
 const Home = () => {
   return (
@@ -44,7 +45,7 @@ const Home = () => {
         </S.BtnContainer>
       </S.HomePresentation>
       <S.HomePerfil>
-        <img src="./images/perfil.png" alt="Foto de Danilo Felix" />
+        <img src={Perfil} alt="Foto de Danilo Felix" />
       </S.HomePerfil>
     </S.HomeContainer>
   )
