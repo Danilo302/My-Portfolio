@@ -3,6 +3,7 @@ import SistemaTcc from '../assets/images/projects/image-sistema-tcc.png'
 import CloneDisney from '../assets/images/projects/clone-disney.png'
 import GestaoUsuario from '../assets/images/projects/gestao-cliente.png'
 import Restaurante from '../assets/images/projects/projeto-site-restaurante.png'
+import ApiSign from '../assets/images/projects/API-signin-signup.png'
 
 export const projects = [
   {
@@ -57,5 +58,14 @@ export const projects = [
     tags: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript'],
     link: 'https://projeto-site-restaurante-one.vercel.app/',
     git: 'https://github.com/Danilo302/projeto-site-restaurante'
+  },
+  {
+    titulo: 'API-auth-signin-signup',
+    urlimage: ApiSign,
+    descricao:
+      'Este projeto consiste em um sistema de autenticação de usuários utilizando Node.js, Express e MongoDB, que permite o cadastro, autenticação e gerenciamento de usuários através de endpoints RESTful.',
+    tags: ['Javascript', 'Nodejs', 'Express', 'MongoDB', 'API'],
+    link: 'https://github.com/Danilo302/API-auth-signin-signup',
+    git: 'https://github.com/Danilo302/API-auth-signin-signup'
   }
 ]
