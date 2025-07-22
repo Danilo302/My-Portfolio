@@ -4,6 +4,7 @@ import CloneDisney from '../assets/images/projects/clone-disney.png'
 import GestaoUsuario from '../assets/images/projects/gestao-cliente.png'
 import Restaurante from '../assets/images/projects/projeto-site-restaurante.png'
 import ApiSign from '../assets/images/projects/API-signin-signup.png'
+import efood from '../assets/images/projects/efood.png'
 
 export const projects = [
   {
@@ -67,5 +68,21 @@ export const projects = [
     tags: ['Javascript', 'Nodejs', 'Express', 'MongoDB', 'API'],
     link: 'https://github.com/Danilo302/API-auth-signin-signup',
     git: 'https://github.com/Danilo302/API-auth-signin-signup'
+  },
+  {
+    titulo: 'Efood - Site de delivery de comida',
+    urlimage: efood,
+    descricao:
+      'O Efood é um site de delivery de comida (estilo iFood) desenvolvido em React.js + TypeScript. Nele pode acessar a pagina de cada restaurante e adicionar a comida ao carrinho.',
+    tags: [
+      'React',
+      'Redux',
+      'TypeScript ',
+      'Styled Components',
+      'API',
+      'React Router'
+    ],
+    link: 'https://efood-inky-alpha.vercel.app/',
+    git: 'https://github.com/Danilo302/Efood'
   }
 ]
