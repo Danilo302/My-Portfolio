@@ -5,6 +5,7 @@ import GestaoUsuario from '../assets/images/projects/gestao-cliente.png'
 import Restaurante from '../assets/images/projects/projeto-site-restaurante.png'
 import ApiSign from '../assets/images/projects/API-signin-signup.png'
 import efood from '../assets/images/projects/efood.png'
+import eplay from '../assets/images/projects/eplay.png'
 
 export const projects = [
   {
@@ -84,5 +85,23 @@ export const projects = [
     ],
     link: 'https://efood-inky-alpha.vercel.app/',
     git: 'https://github.com/Danilo302/Efood'
+  },
+  {
+    titulo: 'EPLAY - Loja de jogos',
+    urlimage: eplay,
+    descricao:
+      'O Eplay Loja Gamer é um projeto de e-commerce de uma loja de produtos gamers, oferecendo uma interface moderna e responsiva. o site inclui funcionalidades como filtragem de produtos, carrinho de compras e integração com APIs para uma experiência de usuário dinâmica e interativa. O design é focado em usabilidade, com navegação intuitiva e visual atraente para o público gamer.',
+    tags: [
+      'React',
+      'Redux',
+      'TypeScript ',
+      'Styled Components',
+      'API',
+      'React Router',
+      'Formik',
+      'ESLint + Prettier'
+    ],
+    link: 'https://eplay-loja-gamer.vercel.app/',
+    git: 'https://github.com/Danilo302/Eplay-Loja-Gamer'
   }
 ]
